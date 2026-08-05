@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<header class="header">
+<a href="#" class="logo">Portfolio.</a>
+
+<nav class="navbar">
+    <a href="#home" style="--i:1;">Home</a>
+    <a href="#about" style="--i:2;">About</a>
+    <a href="#skills" style="--i:3;">Skills</a>
+    <a href="#projects" style="--i:4;">Projects</a>
+    <a href="#contact" style="--i:5;">Contact</a>
+
+</nav>
+</header>
+
+<section class="home" id="home">
+    <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Vien Amodente</h1>
+        <h3>Aspiring <span>Junior Web Developer</span></h3>
+
+         <p>Building secure, practical, and user-friendly web applications.</p>
+
+         <br>
+        <p>
+            Computer Science graduate passionate about developing secure and user-friendly web applications.
+            Experienced in PHP, JavaScript, Python, MySQL, and HTML/CSS through academic and personal projects.
+            Currently learning Laravel to strengthen my backend development skills.
+        </p>
+
+        <div class="social-media">
+            <a href="https://github.com/vieenn"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/vien-merick-amodente-b43845373/"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="https://www.facebook.com/vien.amodente/"><i class='bx bxl-facebook'></i></a>
+        </div>
+
+           <a href="AMODENTE_VienCV.pdf" class="btn" download>Download Resume</a>
+           <a href="#projects" class="btn">View Projects</a>
+    </div>
+
+    <div class="home-img">
+        <img src="Home.jpg" alt="">
+    </div>
+
+</section>
+
+<section class="about" id="about">
+    <div class="about-img">
+        <img src="images/pic.png" alt="Profile Picture">
+    </div>
+
+    <div class="about-content">
+        <h2 class="heading">About <span>Me</span>
+        </h2>
+
+        <h3>Junior Web Developer</h3>
+
+        <p>
+            I am a Computer Science graduate with a strong interest in web development. Throughout my 
+            academic journey, I worked on several academic and collaborative projects using PHP, Python, 
+            JavaScript, HTML, CSS, and MySQL. These projects include an online voting system with facial
+            recognition and an automatic timetable generator. Working in a team helped me develop communication,
+            problem-solving, and collaboration skills, while also strengthen my technical knowledge. I enjoy
+            learning new technologies and continuously improving my skills, and I am currently expanding my 
+            backend development knowledge by learning Laravel. 
+        </p>
+    </div>
+</section>
+
+<section class="skills" id="skills">
+
+    <h2 class="heading">
+        My <span>Skills</span>
+    </h2>
+
+    <div class="skills-container">
+
+        <div class="skill-box">
+            <i class='bx bx-code-alt'></i>
+
+            <h3>Programming Languages</h3>
+
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>Python</li>
+                <li>SQL</li>
+            </ul>
+        </div>
+
+        <div class="skill-box">
+            <i class='bx bx-layer'></i>
+
+            <h3>Frameworks</h3>
+
+            <ul>
+                <li>Laravel (Currently Learning)</li>
+            </ul>
+        </div>
+
+        <div class="skill-box">
+            <i class='bx bx-data'></i>
+
+            <h3>Database</h3>
+
+            <ul>
+                <li>MySQL</li>
+                <li>phpMyAdmin</li>
+            </ul>
+        </div>
+
+        <div class="skill-box">
+            <i class='bx bx-wrench'></i>
+
+            <h3>Tools & Platforms</h3>
+
+            <ul>
+                <li>Visual Studio Code</li>
+                <li>Microsoft Office</li>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>XAMPP</li>
+                <li>Figma</li>
+                <li>Wix</li>
+            </ul>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="projects" id="projects">
+
+    <h2 class="heading">
+        My <span>Projects</span>
+    </h2>
+
+    <div class="projects-container">
+
+        <!-- Project 1 -->
+        <div class="project-card">
+
+            <img src="images/login.png" alt="VOTEX Screenshot">
+
+            <div class="project-content">
+
+                <h3>VOTEX - Online Voting System</h3>
+
+                <p>
+                    A secure web-based online voting system developed as a team capstone project,
+                    featuring Google OAuth authentication and facial recognition verification.
+                </p>
+
+                <div class="tech">
+                    <span>PHP |</span>
+                    <span>MySQL |</span>
+                    <span>JavaScript |</span>
+                    <span>Python |</span>
+                    <span>Google OAuth |</span>
+                    <span>REST API |</span>
+                    <span>face_recognition </span>
+                </div>
+
+                <div class="project-buttons">
+                    <a href="votex.html">Details</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+
+            <img src="images/timetable.png" alt="Timetable Generator Screenshot">
+
+            <div class="project-content">
+
+                <h3>Automatic Timetable Generator</h3>
+
+                <p>
+                    A team academic project that automatically generates conflict-free class schedules
+                    using a Genetic Algorithm to improve scheduling efficiency.
+                </p>
+
+                <div class="tech">
+                    <span>Python |</span>
+                    <span>Django |</span>
+                    <span>MySQL |</span>
+                    <span>CSS</span>
+                    <span>JavaScript |</span>
+                    <span>Genetic Algorithm</span>
+                </div>
+
+                <div class="project-buttons">
+                    <a href="timetable.html">Details</a>
+                </div>
+
+            </div>
+
+        </div>
+
+                <div class="project-card">
+
+            <img src="images/pos.jpg" alt="Point of Sale System Screenshot">
+
+            <div class="project-content">
+
+                <h3>Point of Sale (POS) System</h3>
+
+                <p>
+                    A desktop-based Point of Sale (POS) system developed as an academic project.
+                    The application allows users to select menu items, enter order quantities,
+                    automatically calculate taxes and the total amount, and generate a printable receipt.
+                </p>
+
+                <div class="tech">
+                    <span>Java |</span>
+                    <span>NetBeans</span>
+                </div>
+
+                <div class="project-buttons">
+                    <a href="pos.html">Details</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+    <div class="contact-content">
+
+        <h2 class="heading">
+            Contact <span>Me</span>
+        </h2>
+
+        <p class="contact-text">
+            Thank you for visiting my portfolio. I'm currently open to <strong>Junior Web Developer</strong> and
+            <strong>Junior Software Developer</strong> opportunities.
+            Feel free to contact me via email or connect with me on LinkedIn.
+        </p>
+
+        <br>
+
+        <div class="contact-info">
+
+            <p>
+                <i class='bx bx-envelope'></i>
+                vienamodente@gmail.com
+            </p>
+
+            <p>
+                <i class='bx bx-phone'></i>
+                +63 938 934 5113
+            </p>
+
+            <p>
+                <i class='bx bx-map'></i>
+                Silang, Cavite, Philippines
+            </p>
+
+        </div>
+
+        <div class="social-media">
+
+            <a href="https://github.com/vieenn" target="_blank">
+                <i class='bx bxl-github'></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/vien-merick-amodente-b43845373/" target="_blank">
+                <i class='bx bxl-linkedin-square'></i>
+            </a>
+
+            <a href="https://www.facebook.com/vien.amodente/" target="_blank">
+                <i class='bx bxl-facebook'></i>
+            </a>
+
+        </div>
+
+        <a href="AMODENTE_VienCV.pdf" class="btn" download>
+            Download Resume
+        </a>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

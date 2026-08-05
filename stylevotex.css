@@ -1,0 +1,16 @@
+.project-details{
+
+    max-width:1000px;
+    margin:auto;
+    padding:100px 20px;
+    background-color: darkslategrey;
+
+}
+
+.project-details img{
+
+    width:100%;
+    border-radius:15px;
+    margin:30px 0;
+
+}
