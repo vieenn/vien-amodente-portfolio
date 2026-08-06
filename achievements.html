@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements | Vien Amodente</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <a href="index.html" class="logo">Portfolio.</a>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+    </nav>
+
+</header>
+
+<section class="achievement-page">
+
+    <h1 class="heading">
+        Achievements & <span>Certifications</span>
+    </h1>
+
+    <div class="achievement-container">
+
+        <!-- Magna Cum Laude -->
+
+        <div class="achievement-card">
+    
+                <img src="images/medal.jpg" alt="Magna Cum Laude Certificate" class="certificate-img">
+
+            <h2>🏅 Magna Cum Laude</h2>
+
+            <p>
+                <strong>Bachelor of Science in Computer Science</strong><br>
+                Philippine Christian University – Dasmariñas
+            </p>
+
+            <p>
+                Graduated with <strong>Magna Cum Laude</strong> honors in recognition of outstanding academic performance.
+            </p>
+
+        </div>
+
+        <!-- Cisco -->
+
+        <div class="achievement-card">
+
+
+                <img src="images/Intro_toCybersec.png" alt="Cisco Networking Academy Certificate" class="certificate-img">
+
+            <h2>Cisco Networking Academy</h2>
+
+            <p>Introduction to Cybersecurity</p>
+
+            <small>Issued: April 02 2025</small>
+
+        </div>
+
+        <!-- AWS -->
+
+        <div class="achievement-card">
+
+                <img src="images/AWS_Resume.png" alt="AWS Cloud Club Certificate" class="certificate-img">
+
+            <h2>AWS Cloud Club – PCU Webinar</h2>
+
+            <p>Certificate of Participation</p>
+            <p>AWScend Beyond Limits: Define your Domain, Elevate your Rusumé.</p>
+
+            <small>March 03, 2025</small>
+
+        </div>
+
+        <div class="achievement-card">
+
+                <img src="images/AWS_Git&GitHub.png" alt="AWS Cloud Club Certificate" class="certificate-img">
+
+            <h2>AWS Cloud Club – PCU Webinar</h2>
+
+            <p>Certificate of Participation</p>
+            <p>GIT and GitHub</p>
+
+            <small>February 27, 2024</small>
+
+        </div>
+
+        <div class="achievement-card">
+
+            <img src="images/AWS_CloudComputing.png" alt="AWS Cloud Club Certificate" class="certificate-img">
+
+            <h2>AWS Cloud Club – PCU Webinar</h2>
+
+            <p>Certificate of Participation</p>
+            <p>A Glimpse of the Endless Sky: The Basics of Cloud Computing with AWS.</p>
+
+            <small>February 27, 2024</small>
+
+        </div>
+
+        <div class="achievement-card">
+
+            <img src="images/AWS_CloudCareer.png" alt="AWS Cloud Club Certificate" class="certificate-img">
+
+            <h2>AWS Cloud Club – PCU Webinar</h2>
+
+            <p>Certificate of Participation</p>
+            <p>Unlocking Cloud Careers: Stuednts Guide to AWS Cloud Club.</p>
+
+            <small>February 27, 2024</small>
+
+        </div>
+
+        <!-- Research -->
+
+        <div class="achievement-card">
+
+            <img src="images/ResearchCongress.png" alt="Research Congress Certificate" class="certificate-img">
+
+            <h2>PCU Research Congress 2026</h2>
+
+            <p>Research Presenter</p>
+
+            <small>
+                Presented our capstone project during the university research congress.
+            </small>
+
+        </div>
+
+        <!-- Holy Angel -->
+
+        <div class="achievement-card">
+
+            <img src="images/CyberSec_Webinar.png" alt="Cybersecurity Webinar Certificate" class="certificate-img">
+
+            <h2>Cybersecurity Webinar</h2>
+
+            <p>Holy Angel University</p>
+
+            <small>Certificate of Participation • April 25, 2026</small>
+
+        </div>
+
+    </div>
+
+    <br>
+    <a href="index.html#about" class="btn">
+        ← Back to Portfolio
+    </a>
+
+</section>
+
+<!-- Lightbox -->
+
+<div id="lightbox" class="lightbox">
+
+    <span class="close">&times;</span>
+
+    <img class="lightbox-content" id="lightbox-img">
+
+</div>
+
+<script>
+
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const images = document.querySelectorAll(".certificate-img");
+const closeBtn = document.querySelector(".close");
+
+images.forEach(img => {
+
+    img.addEventListener("click", () => {
+
+        lightbox.style.display = "flex";
+        lightboxImg.src = img.src;
+
+    });
+
+});
+
+closeBtn.onclick = () => {
+    lightbox.style.display = "none";
+}
+
+lightbox.onclick = (e) => {
+
+    if(e.target === lightbox){
+        lightbox.style.display = "none";
+    }
+
+}
+
+document.addEventListener("keydown", (e)=>{
+
+    if(e.key==="Escape"){
+        lightbox.style.display="none";
+    }
+
+});
+
+</script>
+
+</body>
+
+</html>

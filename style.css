@@ -495,9 +495,6 @@ body{
 }
 
 
-/* ==========================
-   Responsive Design
-========================== */
 
 @media (max-width: 768px){
 
@@ -548,4 +545,146 @@ body{
     .contact-content{
         width:100%;
     }
+}
+
+/* ============================
+   Achievements Page
+============================ */
+
+.achievement-page{
+    padding:120px 10% 80px;
+    background:#172020;
+    min-height:100vh;
+    text-align:center;
+}
+
+.achievement-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:30px;
+    margin-top:50px;
+}
+
+.achievement-card{
+    background:#1f242d;
+    border-radius:20px;
+    padding:25px;
+    transition:.3s;
+    border:2px solid transparent;
+}
+
+.achievement-card:hover{
+    transform:translateY(-8px);
+    border-color:aqua;
+    box-shadow:0 0 20px rgba(0,255,255,.3);
+}
+
+.achievement-card img{
+    width:100%;
+    border-radius:15px;
+    margin-bottom:20px;
+    border:3px solid aqua;
+}
+
+.achievement-card h2{
+    margin-bottom:15px;
+    color:aqua;
+}
+
+.achievement-card p{
+    line-height:1.8;
+    margin-bottom:10px;
+}
+
+.achievement-card small{
+    color:#bdbdbd;
+}
+
+.achievement-card img{
+    width:100%;
+    border-radius:15px;
+    border:3px solid aqua;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.achievement-card img:hover{
+    transform:scale(1.03);
+    box-shadow:0 0 20px aqua;
+}
+
+/*==============================
+      Certificate Lightbox
+==============================*/
+
+.certificate-img{
+    width:100%;
+    border-radius:15px;
+    cursor:pointer;
+    transition:.3s;
+    border:3px solid aqua;
+}
+
+.certificate-img:hover{
+
+    transform:scale(1.03);
+    box-shadow:0 0 20px aqua;
+
+}
+
+.lightbox{
+
+    display:none;
+    position:fixed;
+    z-index:9999;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.92);
+
+    justify-content:center;
+    align-items:center;
+
+}
+
+.lightbox-content{
+
+    max-width:90%;
+    max-height:90%;
+    border-radius:15px;
+    animation:zoom .3s;
+
+}
+
+.close{
+
+    position:absolute;
+    top:25px;
+    right:40px;
+    font-size:45px;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.close:hover{
+
+    color:aqua;
+
+}
+
+@keyframes zoom{
+
+    from{
+        transform:scale(.7);
+        opacity:0;
+    }
+
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+
 }
